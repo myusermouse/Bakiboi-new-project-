@@ -53,10 +53,12 @@ body{
 }
 header{
    position: fixed;
+   z-index: 80;
    left: 0;
    top: 0;
-   width: 420px;
+   width: 100%;
    height: 40px;
+   background: #fff;
    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
 }
 .head-content{
@@ -84,13 +86,15 @@ header{
     width: 0px;
     height: 33px;
     outline: none;
+    background: #E3E6FF;
     border-radius: 10px;
     border: none;
     padding: 0 20px;
-    margin-bottom: 3px;
-    margin-right: -3px;
+    margin-bottom: 1px;
+    margin-right: -1px;
     transition: all 0.6s;
     max-width: 200px;
+    overflow: hidden;
 }
 .head-content  .search{
     width: 30px;
@@ -106,7 +110,7 @@ header{
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 10;
+    z-index: 100;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -157,11 +161,14 @@ header{
 
 .st-section{
     margin-top: 50px;
-    background: #FFFFFF;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    background: #113AAA;
+    color: #fff;
 }
 section{
+    margin-top: 10px;
+    padding: 10px;
     background: #FFFFFF;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
@@ -178,4 +185,96 @@ section{
 }
 .new-text-ad{
     width: 35px!important;
+}
+table{
+    width: 100%;
+}
+th{
+    text-align: center;
+    padding: 2px;
+    font-size: 1em;
+    font-weight: bolder;
+}
+td{
+    text-align: center;
+    padding: 1px;
+    font-size: 0.9em;
+}
+/* add new ditails page design */
+
+.add-new-ditails{
+    width: 100%;
+    height: /*350px*/0px;
+    max-height: 350px;
+    background: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    position: absolute;
+    overflow: hidden;
+    transition: all 0.7s;
+    margin-top: -55px;
+    z-index: 50;
+}
+.cancel{
+    width: 80px!important;
+    height: 25px!important;
+    border-radius: 5px!important;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 0.9em;
+    background: #FF4646;
+    color: #fff;
+    padding: 1px 2px;
+    
+}
+.cancel .cancel-img{
+    width: 20px;
+    border-radius: 50%;
+    box-shadow: 0 0 3px rgba(255, 255, 255, 0.7);
+}
+form{
+    margin-top: 60px;
+}
+.new-ditails{
+    padding: 10px;
+    position: relative;
+}
+.add-new-ditails .new-ditails input{
+    width: 100%;
+    height: 40px;
+    border-radius: 3px;
+    border: 1px solid #000;
+    outline: none;
+    font-size: 1em;
+    color: var(--primary-text);
+    background: var(--primary-background);
+    margin-top: 10px;
+    padding: 0 20px 0 10px;
+}
+.new-ditails button{
+    width: 40%;
+    height: 35px;
+    margin-left: 20px;
+    margin-top: 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+.reset-btn{
+    background: #950D3A;
+    color: #fff;
+}
+.save-btn{
+    background: #113AAA;
+    color: #fff;
 }
